@@ -15,6 +15,7 @@ table, th, td {
 th, td {
 	padding: 5px;
 }
+
 th {
 	text-align: left;
 }
