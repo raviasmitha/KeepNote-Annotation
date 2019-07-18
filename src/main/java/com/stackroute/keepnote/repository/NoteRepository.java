@@ -2,8 +2,8 @@ package com.stackroute.keepnote.repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.stackroute.keepnote.model.Note;
+
 
 /*
  * This class contains the code for data storage interactions and methods
@@ -14,7 +14,6 @@ import com.stackroute.keepnote.model.Note;
 public class NoteRepository {
 
 	/* Declare a variable called "list" to store all the notes. */
-
 	List<Note> list;
 
 	public NoteRepository() {
@@ -70,10 +69,10 @@ public class NoteRepository {
 	 * exists in the list
 	 */
 
-	public boolean exists(int id) {
+	public boolean exists(int noteId) {
 		boolean flag=false;
 		for(int i=0;i<list.size();i++) {
-			if(list.get(i).getNoteId()==id) {
+			if(list.get(i).getNoteId()==noteId) {
 				flag = true;
 				break;
 			}
@@ -81,14 +80,3 @@ public class NoteRepository {
 		return flag;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
